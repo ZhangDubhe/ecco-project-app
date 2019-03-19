@@ -14,7 +14,10 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: './list/list.module#ListPageModule'
-  }
+  },
+  { path: 'question', loadChildren: './question/question.module#QuestionPageModule' },
+  { path: 'result', loadChildren: './result/result.module#ResultPageModule' },
+  { path: 'share', loadChildren: './share/share.module#SharePageModule' }
 ];
 
 @NgModule({
