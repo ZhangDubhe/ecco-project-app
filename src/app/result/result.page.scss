@@ -1,0 +1,35 @@
+.page-ctn {
+  padding: 20px;
+}
+.footnote {
+  font-size: 0.8rem;
+  color: #6F6F6F;
+  margin-top: 10px;
+  text-align: left;
+  &.link {
+    font-size: 0.5rem;
+    text-decoration: underline;
+    text-align: left;
+    opacity: 0.6;
+  }
+}
+
+
+ion-card {
+  min-height: 405px;
+  display: flex;
+  flex-flow: column;
+
+  margin-bottom: 40px;
+}
+
+ion-card-content {
+  padding-top: 5px;
+  margin-top: auto;
+}
+
+.end-btn {
+  margin-top: -45px;
+  z-index: 1000;
+  position: relative;
+}

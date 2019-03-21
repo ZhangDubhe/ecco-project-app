@@ -16,7 +16,7 @@ const routes: Routes = [
     loadChildren: './list/list.module#ListPageModule'
   },
   { path: 'question', loadChildren: './question/question.module#QuestionPageModule' },
-  { path: 'result', loadChildren: './result/result.module#ResultPageModule' },
+  { path: 'result/:number', loadChildren: './result/result.module#ResultPageModule' },
   { path: 'share', loadChildren: './share/share.module#SharePageModule' }
 ];
 

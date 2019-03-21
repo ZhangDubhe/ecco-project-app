@@ -1,0 +1,25 @@
+.full-black {
+  color: white;
+  text-align: center;
+  background: black;
+}
+.ecco-text {
+  margin-top: -80px;
+}
+.ecco-arrow {
+  margin-top: 10px;
+}
+.card-img {
+  height: 200px;
+  object-fit: cover !important;
+}
+.qr-text {
+  width: calc(100% - 80px);
+}
+
+.qr-img {
+  width: 60px;
+  height: 60px;
+
+  background: #fafafa;
+}

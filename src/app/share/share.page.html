@@ -1,9 +1,34 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>share</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+<section class="page-content full-black">
+  <ion-img src="/assets/ecco/ecco.png"></ion-img>
+  <ion-text class="ecco-text">Today, we are making a difference.</ion-text>
+  <ion-icon class="ecco-arrow" name="ios-arrow-down"></ion-icon>
+</section>
+<section class="page-content">
+  <ion-card>
+    <img src="/assets/ecco/water2.png" class="card-img" />
+    <ion-card-header>
+      <p>If all of your shoes were made from <strong>ECCO</strong> leather using the DriTan<sup>TM</sup> technology, you can save
+      <strong> {{ 1.11 * shoeNum}}</strong> liters of water.</p>
+    </ion-card-header>
 
+    <ion-card-content>
+      <p>This is</p>
+      <ol>
+        <li>enough to keep {{ 1.11* shoeNum }} kids hydrated for 1 day</li>
+        <li>enough to grow and harvest {{ 3.8675* shoeNum }} grams of crop</li>
+        <li>enough to generate {{ 14.8* shoeNum }} watt-hour of electricity</li>
+        <li>enough to feed {{ 4.83* shoeNum }} birds per day</li>
+      </ol>
+
+      <section class="flex-row">
+        <section class="qr-text">
+          <p>Save the photo and share with your friends,</p>
+          <p>Join ECCO to free the environment, and free yourself.</p>
+        </section>
+        <ion-img class="qr-img" src="/assets/ecco/qrcode.png"></ion-img>
+      </section>
+    </ion-card-content>
+  </ion-card>
+</section>
 </ion-content>
