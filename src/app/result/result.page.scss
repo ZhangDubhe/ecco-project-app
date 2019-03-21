@@ -1,4 +1,5 @@
 .page-ctn {
+  height: 100vh;
 }
 .footnote {
   font-size: 0.75rem;
@@ -28,17 +29,15 @@ ion-card-content {
 }
 
 .full-screen {
-  position: relative;
-  height: 100vh;
+  // position: relative;
+  height: 100%;
   background-color: #000000;
+  flex-flow: column;  
+  justify-content: flex-start;
   .media {
-    height: 100vh;
     width: 100vw;
   }
   .section-ctn {
-    position: absolute;
-    top: 0;
-    height: 100vh;
     display: flex;
     flex-flow: column;
     align-items: center;
