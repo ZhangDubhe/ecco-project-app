@@ -28,10 +28,22 @@ ion-card-content {
 }
 
 .full-screen {
-  flex-flow: column;
+  position: relative;
   height: 100vh;
-  background-image: url('/assets/ecco/leather.png');
-  background-size: cover;
+  background-color: #000000;
+  .media {
+    height: 100vh;
+    width: 100vw;
+  }
+  .section-ctn {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .content {
   font-size: 1.125rem;

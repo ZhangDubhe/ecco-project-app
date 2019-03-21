@@ -89,15 +89,25 @@
 
       <ion-slide class="full-screen">
         <!-- <ion-img src="/assets/ecco/leather.png"></ion-img>         -->
-        <p class="content">
-          ECCO’s water-efficient innovation DriTan™ saves ECCO 25,000,000 litres of water at its tannery in the Netherlands every
-          year. The Leather Working Group estimates that the total water consumption worldwide in bovine leather making is 400 bn
-          litres per year. Now consider the potential savings if DriTan™ by ECCO Leather is applied to tanneries worldwide.
-        </p>
-        <ion-button *ngIf="currentIndex == 5" (click)="gotoQRCode()" class="ion-margin-horizontal end-btn" expand="block" color="primary">
-          <ion-ripple-effect></ion-ripple-effect>
-          QRCODE
-        </ion-button>
+        <video class="media" src="/assets/ecco/leather.mp4" autoplay="true" loop="loop"></video>
+        <section class="section-ctn">
+          <p class="content">
+            ECCO’s water-efficient innovation DriTan™ saves ECCO 25,000,000 litres of water at its tannery in the Netherlands
+            every
+            year.
+          </p>
+          <p class="content">
+            The Leather Working Group estimates that the total water consumption worldwide in bovine leather making is 400 bn
+            litres per year.
+          </p>
+          <p class="content">
+            Now consider the potential savings if DriTan™ by ECCO Leather is applied to tanneries worldwide.
+          </p>
+          <ion-button *ngIf="currentIndex == 5" (click)="gotoQRCode()" class="ion-margin-horizontal end-btn" expand="block" color="primary">
+            <ion-ripple-effect></ion-ripple-effect>
+            QRCODE
+          </ion-button>
+        </section>
       </ion-slide>
     </ion-slides>
 
