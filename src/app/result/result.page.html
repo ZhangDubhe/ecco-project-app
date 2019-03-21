@@ -1,22 +1,16 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-icon name="arrow-back" (click)="goBack()"></ion-icon>
-    <ion-title>Ecco</ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content>
   <section class="page-ctn">
-    <p *ngIf="currentIndex != 5" class="px-2">If all of your shoes were made from <strong>ECCO</strong> leather using the DriTan<sup>TM</sup> technology</p>
     <ion-slides pager="true"
     (ionSlideReachEnd)="setSilderIndex(5)"
     (ionSlidePrevEnd)="setSilderIndex(4)"
     >
-      <ion-slide>
+      <ion-slide class="full-screen">
+        <p class="px-2">If all of your shoes were made from <strong>ECCO</strong> leather using the DriTan<sup>TM</sup> technology</p>
         <ion-card>
           <ion-img src="/assets/ecco/water.png"></ion-img>
           <ion-card-header>
-            <ion-card-subtitle>you can save <strong>{{1.11 * shoeNum | number:"0.1-2"}} </strong> of water.</ion-card-subtitle>
+            <ion-card-subtitle>you can save <strong>{{1.11 * shoeNum | number:"0.1-2"}}</strong> liters of water.</ion-card-subtitle>
           </ion-card-header>
 
           <ion-card-content>
@@ -27,7 +21,8 @@
         </ion-card>
       </ion-slide>
 
-      <ion-slide>
+      <ion-slide class="full-screen">
+        <p class="px-2">If all of your shoes were made from <strong>ECCO</strong> leather using the DriTan<sup>TM</sup> technology</p>
         <ion-card>
           <ion-img src="/assets/ecco/kids.png"></ion-img>
           <ion-card-header>
@@ -44,7 +39,8 @@
         </ion-card>
       </ion-slide>
 
-      <ion-slide>
+      <ion-slide class="full-screen">
+        <p class="px-2">If all of your shoes were made from <strong>ECCO</strong> leather using the DriTan<sup>TM</sup> technology</p>
         <ion-card>
           <ion-img src="/assets/ecco/crop.png"></ion-img>
           <ion-card-header>
@@ -53,12 +49,12 @@
           <ion-card-content>
             <p class="footnote">Potato, or crops require approximately equivalent amount of water</p>
             <p><a class="footnote link" href="https://www.theguardian.com/news/datablog/2013/jan/10/how-much-water-food-production-waste">https://www.theguardian.com/news/datablog/2013/jan/10/how-much-water-food-production-waste</a></p>
-            <p class="footnote">0.287L to produce 1g potato. {{1.11 * shoeNum | number:"0.1-2"}}L water to produce {{shoeNum | number:"0.1-2"}} grams potato?</p>
           </ion-card-content>
         </ion-card>
       </ion-slide>
 
-      <ion-slide>
+      <ion-slide  class="full-screen">
+        <p class="px-2">If all of your shoes were made from <strong>ECCO</strong> leather using the DriTan<sup>TM</sup> technology</p>
         <ion-card>
           <ion-img src="/assets/ecco/power.jpeg"></ion-img>
           <ion-card-header>
@@ -72,14 +68,14 @@
         </ion-card>
       </ion-slide>
 
-      <ion-slide>
+      <ion-slide  class="full-screen">
+        <p class="px-2">If all of your shoes were made from <strong>ECCO</strong> leather using the DriTan<sup>TM</sup> technology</p>
         <ion-card>
           <ion-img src="/assets/ecco/birds.png"></ion-img>
           <ion-card-header>
             <ion-card-subtitle>to feed <strong>{{4.83 * shoeNum | number:"0.1-2"}} birds</strong> per day</ion-card-subtitle>
           </ion-card-header>
           <ion-card-content>
-
             <p class="footnote">Assume an average consumption of .23 liter per day per bird</p>
             <p><a class="footnote link" 
               href="https://www.engineeringtoolbox.com/farm-use-animals-water-consumption-d_">https://www.engineeringtoolbox.com/farm-use-animals-water-consumption-d_</a></p>
@@ -87,7 +83,7 @@
         </ion-card>
       </ion-slide>
 
-      <ion-slide class="full-screen">
+      <ion-slide class="full-screen black">
         <!-- <ion-img src="/assets/ecco/leather.png"></ion-img>         -->
         <video class="media" src="/assets/ecco/leather.mp4" autoplay="true" loop="loop"></video>
         <section class="section-ctn">

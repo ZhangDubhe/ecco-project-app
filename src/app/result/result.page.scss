@@ -27,13 +27,14 @@ ion-card-content {
   padding-top: 5px;
   margin-top: auto;
 }
-
 .full-screen {
   // position: relative;
   height: 100vh;
-  background-color: #000000;
   flex-flow: column;  
   justify-content: flex-start;
+  &.black {
+    background-color: #000000;
+  }
   .media {
     width: 100vw;
   }
@@ -42,6 +43,9 @@ ion-card-content {
     flex-flow: column;
     align-items: center;
     justify-content: center;
+  }
+  .px-2 {
+    font-size: 0.9125rem;
   }
 }
 .content {
