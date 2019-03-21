@@ -10,13 +10,13 @@
     <img src="/assets/ecco/water2.png" class="card-img" />
     <ion-card-content>
       <p class="text-justify">If all of your shoes were made from <strong>ECCO</strong> leather using the DriTan<sup>TM</sup> technology, you can save
-      <strong>{{ 1.11 * shoeNum}}</strong> liters of water.</p>
+      <strong>{{ 1.11 * shoeNum | number:"0.1-2"}}</strong> liters of water.</p>
       <br>
       <p class="text-small">This is</p>
-      <p class="text-small">1. enough to keep {{ 1.11* shoeNum }} kids hydrated for 1 day</p>
-      <p class="text-small">2. enough to grow and harvest {{ 3.8675* shoeNum }} grams of crop</p>
-      <p class="text-small">3. enough to generate {{ 14.8* shoeNum }} watt-hour of electricity</p>
-      <p class="text-small">4. enough to feed {{ 4.83* shoeNum }} birds per day</p>
+      <p class="text-small">1. enough to keep {{ 1.11* shoeNum | number:"1.0-0"}} kids hydrated for 1 day</p>
+      <p class="text-small">2. enough to grow and harvest {{ 3.8675* shoeNum | number:"0.1-2"}} grams of crop</p>
+      <p class="text-small">3. enough to generate {{ 14.8* shoeNum | number:"0.1-2"}} watt-hour of electricity</p>
+      <p class="text-small">4. enough to feed {{ 4.83* shoeNum | number:"0.1-2"}} birds per day</p>
       <br>
       <section class="flex-row qr-ctn">
         <section class="qr-text">

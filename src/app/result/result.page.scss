@@ -45,13 +45,15 @@ ion-card-content {
   }
 }
 .content {
-  font-size: 1.125rem;
+  font-size: 1rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   text-align: justify;
   line-height: 1.3;
   color: white;
+  margin-bottom: 0;
 }
+
 .end-btn {
   margin-top: 2rem;
 }
