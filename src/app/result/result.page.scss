@@ -1,8 +1,7 @@
 .page-ctn {
-  padding: 20px;
 }
 .footnote {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: #6F6F6F;
   margin-top: 10px;
   text-align: left;
@@ -16,7 +15,7 @@
 
 
 ion-card {
-  min-height: 405px;
+  min-height: calc(100vh - 260px);
   display: flex;
   flex-flow: column;
 
@@ -28,8 +27,25 @@ ion-card-content {
   margin-top: auto;
 }
 
+.full-screen {
+  flex-flow: column;
+}
+.content {
+  font-size: 1.125rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  text-align: left;
+}
 .end-btn {
-  margin-top: -45px;
-  z-index: 1000;
-  position: relative;
+  margin-top: 1rem;
+}
+.px-2 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 0;
+}
+
+strong {
+  color: #000000;
+  font-size: 1.2em;
 }

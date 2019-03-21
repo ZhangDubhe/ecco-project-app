@@ -3,11 +3,18 @@
   text-align: center;
   background: black;
 }
+.page-content {
+  padding: 4px;
+}
 .ecco-text {
   margin-top: -80px;
 }
 .ecco-arrow {
   margin-top: 10px;
+}
+
+.qr-ctn {
+
 }
 .card-img {
   height: 200px;
@@ -22,4 +29,21 @@
   height: 60px;
 
   background: #fafafa;
+}
+
+strong {
+  color: #000000;
+  font-size: 1.1em;
+}
+
+.share-pic {
+  font-size: 0.8125rem;
+}
+.text-justify {
+  text-align: justify;
+  line-height: 1.1;
+}
+.text-small {
+  font-size: 0.8em;
+  line-height: 1;
 }

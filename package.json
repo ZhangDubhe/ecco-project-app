@@ -9,7 +9,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "upload": "scp -i ~/.ssh/id_rsa -r www/ dubhe@gcp.dubheee.com:/www/wwwroot/ecco"
   },
   "private": true,
   "dependencies": {

@@ -7,7 +7,7 @@
 
 <ion-content>
   <section class="page-ctn">
-    <p>If all of your shoes were made from <strong>ECCO</strong> leather using the DriTanTM technology</p>
+    <p *ngIf="currentIndex != 5" class="px-2">If all of your shoes were made from <strong>ECCO</strong> leather using the DriTan<sup>TM</sup> technology</p>
     <ion-slides pager="true"
     (ionSlideReachEnd)="setSilderIndex(5)"
     (ionSlidePrevEnd)="setSilderIndex(4)"
@@ -16,7 +16,7 @@
         <ion-card>
           <ion-img src="/assets/ecco/water.png"></ion-img>
           <ion-card-header>
-            <ion-card-subtitle>you can save {{1.11 * shoeNum}} liters of water.</ion-card-subtitle>
+            <ion-card-subtitle>you can save <strong>{{1.11 * shoeNum | number:"0.1-2"}} </strong> of water.</ion-card-subtitle>
           </ion-card-header>
 
           <ion-card-content>
@@ -31,7 +31,8 @@
         <ion-card>
           <ion-img src="/assets/ecco/kids.png"></ion-img>
           <ion-card-header>
-            <ion-card-subtitle>This is <strong>enough</strong> to keep <strong>{{1.11 * shoeNum}} kids</strong> hydrated for 1 day</ion-card-subtitle>
+            <ion-card-subtitle>This is <strong>enough</strong> to keep <strong>{{1.11 * shoeNum | number:"1.0-0"}} kids</strong>
+              hydrated for 1 day</ion-card-subtitle>
           </ion-card-header>
 
           <ion-card-content>
@@ -47,21 +48,21 @@
         <ion-card>
           <ion-img src="/assets/ecco/crop.png"></ion-img>
           <ion-card-header>
-            <ion-card-subtitle>to grow and harvest <strong>{{3.8675 * shoeNum}}</strong> grams of <strong>crop</strong></ion-card-subtitle>
+            <ion-card-subtitle>to grow and harvest <strong>{{3.8675 * shoeNum | number:"0.1-2"}}</strong> grams of <strong>crop</strong></ion-card-subtitle>
           </ion-card-header>
           <ion-card-content>
             <p class="footnote">Potato, or crops require approximately equivalent amount of water</p>
             <p><a class="footnote link" href="https://www.theguardian.com/news/datablog/2013/jan/10/how-much-water-food-production-waste">https://www.theguardian.com/news/datablog/2013/jan/10/how-much-water-food-production-waste</a></p>
-            <p class="footnote">0.287L to produce 1g potato. {{1.11 * shoeNum}}L water to produce {{shoeNum}} grams potato?</p>
+            <p class="footnote">0.287L to produce 1g potato. {{1.11 * shoeNum | number:"0.1-2"}}L water to produce {{shoeNum | number:"0.1-2"}} grams potato?</p>
           </ion-card-content>
         </ion-card>
       </ion-slide>
 
       <ion-slide>
         <ion-card>
-          <ion-img src="/assets/ecco/power.png"></ion-img>
+          <ion-img src="/assets/ecco/power.jpeg"></ion-img>
           <ion-card-header>
-            <ion-card-subtitle>to generate <strong>{{14.8 * shoeNum}}</strong> watt-hour of <strong>electricity</strong></ion-card-subtitle>
+            <ion-card-subtitle>to generate <strong>{{14.8 * shoeNum | number:"0.1-2"}}</strong> watt-hour of <strong>electricity</strong></ion-card-subtitle>
           </ion-card-header>
           <ion-card-content>
             <p class="footnote">Assume power plant using 20 gallons of water for 1 kWh</p>
@@ -75,7 +76,7 @@
         <ion-card>
           <ion-img src="/assets/ecco/birds.png"></ion-img>
           <ion-card-header>
-            <ion-card-subtitle>to feed <strong>{{4.83 * shoeNum}} birds</strong> per day</ion-card-subtitle>
+            <ion-card-subtitle>to feed <strong>{{4.83 * shoeNum | number:"0.1-2"}} birds</strong> per day</ion-card-subtitle>
           </ion-card-header>
           <ion-card-content>
 
@@ -86,26 +87,21 @@
         </ion-card>
       </ion-slide>
 
-      <ion-slide>
-        <ion-card
-        style="min-height: 360px">
-          <ion-img src="/assets/ecco/leather.png"></ion-img>
-          <ion-card-content>
-            <p class="footnote">
-              ECCO’s water-efficient innovation DriTan™ saves ECCO 25,000,000 litres of water at its tannery in the Netherlands every
-              year. The Leather Working Group estimates that the total water consumption worldwide in bovine leather making is 400 bn
-              litres per year. Now consider the potential savings if DriTan™ by ECCO Leather is applied to tanneries worldwide.
-            </p>
-          </ion-card-content>
-        </ion-card>
+      <ion-slide class="full-screen">
+        <ion-img src="/assets/ecco/leather.png"></ion-img>        
+        <p class="content">
+          ECCO’s water-efficient innovation DriTan™ saves ECCO 25,000,000 litres of water at its tannery in the Netherlands every
+          year. The Leather Working Group estimates that the total water consumption worldwide in bovine leather making is 400 bn
+          litres per year. Now consider the potential savings if DriTan™ by ECCO Leather is applied to tanneries worldwide.
+        </p>
+        <ion-button *ngIf="currentIndex == 5" (click)="gotoQRCode()" class="ion-margin-horizontal end-btn" expand="block" color="primary">
+          <ion-ripple-effect></ion-ripple-effect>
+          QRCODE
+        </ion-button>
       </ion-slide>
     </ion-slides>
 
-    <ion-button *ngIf="currentIndex == 5"
-    (click)="gotoQRCode()" class="ion-margin-horizontal end-btn" expand="block" color="primary">
-      <ion-ripple-effect></ion-ripple-effect>
-      QRCODE
-    </ion-button>
+
   </section>
 
 </ion-content>
